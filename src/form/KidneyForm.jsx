@@ -69,7 +69,7 @@ function KidneyForm() {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/predict/kidney', {
+      const res = await fetch('https://smart-health-care-tracker-backend.onrender.com/predict/kidney', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
