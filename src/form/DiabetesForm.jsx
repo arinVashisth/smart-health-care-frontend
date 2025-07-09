@@ -80,7 +80,7 @@ function DiabetesForm() {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/predict/diabetes', {
+      const res = await fetch('https://smart-health-care-tracker-backend.onrender.com/predict/diabetes', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
